@@ -1,0 +1,4 @@
+﻿  Integration.cpp
+C:\Users\user\Desktop\Integration\Integration\Integration.cpp(73,27): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+C:\Users\user\Desktop\Integration\Integration\Integration.cpp(80,27): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+  Integration.vcxproj -> C:\Users\user\Desktop\Integration\Debug\Integration.exe
