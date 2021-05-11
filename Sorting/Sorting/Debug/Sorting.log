@@ -1,0 +1,8 @@
+﻿  Sorting.cpp
+C:\Users\user\Desktop\Sorting\Sorting\Sorting.cpp(209,19): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\user\Desktop\Sorting\Sorting\Sorting.cpp(226,19): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\user\Desktop\Sorting\Sorting\Sorting.cpp(263,19): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\user\Desktop\Sorting\Sorting\Sorting.cpp(280,19): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\user\Desktop\Sorting\Sorting\Sorting.cpp(317,19): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\user\Desktop\Sorting\Sorting\Sorting.cpp(334,19): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  Sorting.vcxproj -> C:\Users\user\Desktop\Sorting\Debug\Sorting.exe
