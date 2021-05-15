@@ -1,0 +1,22 @@
+﻿  Matrix multiplication.cpp
+C:\Users\user\Desktop\Matrix multiplication\Matrix multiplication\Matrix multiplication.cpp(168,21): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\user\Desktop\Matrix multiplication\Matrix multiplication\Matrix multiplication.cpp(170,21): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\user\Desktop\Matrix multiplication\Matrix multiplication\Matrix multiplication.cpp(175,21): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\user\Desktop\Matrix multiplication\Matrix multiplication\Matrix multiplication.cpp(177,21): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\user\Desktop\Matrix multiplication\Matrix multiplication\Matrix multiplication.cpp(180,21): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\user\Desktop\Matrix multiplication\Matrix multiplication\Matrix multiplication.cpp(182,21): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\user\Desktop\Matrix multiplication\Matrix multiplication\Matrix multiplication.cpp(136,12): warning C4101: k: неиспользованная локальная переменная
+C:\Users\user\Desktop\Matrix multiplication\Matrix multiplication\Matrix multiplication.cpp(221,21): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\user\Desktop\Matrix multiplication\Matrix multiplication\Matrix multiplication.cpp(223,21): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\user\Desktop\Matrix multiplication\Matrix multiplication\Matrix multiplication.cpp(228,21): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\user\Desktop\Matrix multiplication\Matrix multiplication\Matrix multiplication.cpp(230,21): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\user\Desktop\Matrix multiplication\Matrix multiplication\Matrix multiplication.cpp(233,21): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\user\Desktop\Matrix multiplication\Matrix multiplication\Matrix multiplication.cpp(235,21): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\user\Desktop\Matrix multiplication\Matrix multiplication\Matrix multiplication.cpp(189,12): warning C4101: k: неиспользованная локальная переменная
+C:\Users\user\Desktop\Matrix multiplication\Matrix multiplication\Matrix multiplication.cpp(274,21): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\user\Desktop\Matrix multiplication\Matrix multiplication\Matrix multiplication.cpp(276,21): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\user\Desktop\Matrix multiplication\Matrix multiplication\Matrix multiplication.cpp(281,21): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\user\Desktop\Matrix multiplication\Matrix multiplication\Matrix multiplication.cpp(283,21): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\user\Desktop\Matrix multiplication\Matrix multiplication\Matrix multiplication.cpp(286,21): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\user\Desktop\Matrix multiplication\Matrix multiplication\Matrix multiplication.cpp(288,21): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+  Matrix multiplication.vcxproj -> C:\Users\user\Desktop\Matrix multiplication\Debug\Matrix multiplication.exe
