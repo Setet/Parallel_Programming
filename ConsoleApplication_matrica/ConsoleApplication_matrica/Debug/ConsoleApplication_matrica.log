@@ -1,0 +1,3 @@
+﻿  ConsoleApplication_matrica.cpp
+C:\Users\user\Downloads\ConsoleApplication_matrica\ConsoleApplication_matrica\ConsoleApplication_matrica.cpp(78,6): warning C4101: sum: неиспользованная локальная переменная
+  ConsoleApplication_matrica.vcxproj -> C:\Users\user\Downloads\ConsoleApplication_matrica\Debug\ConsoleApplication_matrica.exe
