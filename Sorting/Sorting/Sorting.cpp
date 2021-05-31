@@ -6,7 +6,7 @@
 #include <time.h>
 using namespace std;
  
-#define SIZE 1000
+#define SIZE 100
 
 void PrintArray(int arr[], int size)
 {
@@ -14,6 +14,18 @@ void PrintArray(int arr[], int size)
 	{
 		cout << arr[i] << " ";
 	}
+}
+
+bool Сomparison(int* A, int* B)
+{
+	for (int i = 0; i < SIZE; i++)
+	{
+		if (A[i] != B[i])
+		{
+			return false;
+		}
+	}
+	return true;
 }
 
 void Swap(int& a, int& b)
@@ -123,9 +135,27 @@ int main()
 	BubbleSort(a, SIZE);
 	t2 = omp_get_wtime();
 	t = t2 - t1;
-	//PrintArray(a, N);
+	//PrintArray(a, SIZE);
 	cout << "Время последовательного алгоритма Пузырька = " << t << endl;
-	delete[] a;
+
+	bool sorted = true;
+	for (int i = 1; i < SIZE; i++)
+	{
+		if (a[i - 1] > a[i])
+		{
+			sorted = false;
+			break;
+		}
+	}
+	if (sorted == true)
+	{
+		cout << "Массив отсортирован правильно!" << endl;
+	}
+	else
+	{
+		cout << "Массив отсортирован неправильно!" << endl;
+	}
+
 
 	//блок с быстрой сортировкой
 	int* b = new int[SIZE];
@@ -137,9 +167,17 @@ int main()
 	QuickSortParallel(b, 0, SIZE - 1);
 	t2 = omp_get_wtime();
 	t = t2 - t1;
-	//PrintArray(a, N);
+	//PrintArray(a, SIZE);
 	cout << "Время параллельного алгоритма Быстрой сортировки = " << t << endl;
-	delete[] b;
+
+	if (!Сomparison(a, b))
+	{
+		cout << "Массив отсортирован неправильно!" << endl;
+	}
+	else
+	{
+		cout << "Массив отсортирован правильно!" << endl;
+	}
 
 	//блок с сортировкой Шеллла
 	int* c = new int[SIZE];
@@ -151,10 +189,40 @@ int main()
 	ShellSortParallel(c, SIZE);
 	t2 = omp_get_wtime();
 	t = t2 - t1;
-	//PrintArray(a, N);
+	//PrintArray(a, SIZE);
 	cout << "Время параллельного алгоритма сортировки Шелла = " << t << endl;
+
+	if (!Сomparison(b, c))
+	{
+		cout << "Массив отсортирован неправильно!\n" << endl;
+	}
+	else
+	{
+		cout << "Массив отсортирован правильно!\n" << endl;
+	}
+
+	delete[] a;
+	delete[] b;
 	delete[] c;
 
-    system("pause");
-    return 0;
+	int choser;
+
+	cout << "Запустить ещё раз?\n" <<
+		"1 - Да\n" <<
+		"2 - Нет\n" <<
+		">: ";
+	cin >> choser;
+
+	switch (choser)
+	{
+	case(1):
+	{
+		system("cls");
+		return main();
+	}
+	case(2):
+	{
+		return 0;
+	}
+	}
 }
