@@ -38,6 +38,14 @@ int main()
 {
 	setlocale(LC_ALL, "Rus");
 
+	int kolwo_procces, gor, vert;
+	cout << "Введите кол-во потоков(желательно,не больше " << omp_get_num_procs() << " штук)" << endl << ">: ";
+	cin >> kolwo_procces;
+	cout << "Деление по горизонтали" << endl << ">: ";
+	cin >> gor;
+	cout << "Деление по вертикали" << endl << ">: ";
+	cin >> vert;
+
 	//объявляем матрицы
 	//A и B-две начальные матрицы
 	//C-для блочного+ленточного
@@ -88,14 +96,6 @@ int main()
 
 	consistent = t2 - t1;
 
-	int kolwo_procces, gor, vert;
-	cout << "Введите кол-во потоков(желательно,не больше " << omp_get_num_procs() << " штук)" << endl << ">: ";
-	cin >> kolwo_procces;
-	cout << "Деление по горизонтали" << endl << ">: ";
-	cin >> gor;
-	cout << "Деление по вертикали" << endl << ">: ";
-	cin >> vert;
-
 	int j, i, g, k;
 	t1 = omp_get_wtime();
 #pragma omp parallel num_threads(kolwo_procces) shared(A,B,C) private (i,j,g,k)
@@ -116,6 +116,10 @@ int main()
 
 	band = t2 - t1;
 
+	//вывод времени последовательного и ленточного метода
+	cout << "Время Последовательного счёта =" << consistent << endl;
+	cout << "Время Ленточного счёта = " << band << endl;
+
 	//сравниваем ленточный счёт с нормальным
 	if (!Сomparison(C, N))
 	{
@@ -125,10 +129,6 @@ int main()
 	{
 		cout << "Марицы равны!" << endl;
 	}
-
-	//вывод времени последовательного и ленточного метода
-	cout << "Время Последовательного счёта =" << consistent << endl;
-	cout << "Время Ленточного счёта = " << band << endl;
 
 	//обнуляем матрицу C после ленточного умножения
 	for (int i = 0; i < SIZE; i++)
@@ -207,6 +207,9 @@ int main()
 	}
 	t2 = omp_get_wtime();
 
+	block = t2 - t1;
+	cout << "Время Блочного = " << block << "\n\n";
+
 	if (!Сomparison(C, N))
 	{
 		cout << "Марицы неравны!" << endl;
@@ -215,9 +218,6 @@ int main()
 	{
 		cout << "Марицы равны!" << endl;
 	}
-
-	block = t2 - t1;
-	cout << "Время Блочного = " << block << "\n\n";
 
 	int choser;
 
