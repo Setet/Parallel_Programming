@@ -1,0 +1,9 @@
+﻿  yakobi.cpp
+C:\Users\user\Desktop\yakobi\yakobi\yakobi.cpp(10,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\user\Desktop\yakobi\yakobi\yakobi.cpp(34,26): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+C:\Users\user\Desktop\yakobi\yakobi\yakobi.cpp(36,25): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+C:\Users\user\Desktop\yakobi\yakobi\yakobi.cpp(40,18): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+C:\Users\user\Desktop\yakobi\yakobi\yakobi.cpp(48,15): warning C4244: =: преобразование "float" в "int", возможна потеря данных
+C:\Users\user\Desktop\yakobi\yakobi\yakobi.cpp(50,21): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+C:\Users\user\Desktop\yakobi\yakobi\yakobi.cpp(67,18): warning C4305: инициализация: усечение из "double" в "float"
+  yakobi.vcxproj -> C:\Users\user\Desktop\yakobi\x64\Debug\yakobi.exe
